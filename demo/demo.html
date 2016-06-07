@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+    <meta http-equiv='Pragma' content='no-cache' />
+    <meta http-equiv='Expires' content='0' />
+    <meta charset='UTF-8' />
+    <meta name='google' content='notranslate'>
+    <meta http-equiv='Content-Language' content='en' />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>bootstrap-progress-modal</title>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44='   crossorigin='anonymous'></script>
+
+    <script src='https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js' integrity='sha256-55Jz3pBCF8z9jBO1qQ7cIf0L+neuPTD1u7Ytzrp2dqo='   crossorigin='anonymous'></script>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous'></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <script src='../bootstrap-progress-modal.js' type='text/javascript' charset='utf-8'></script>
+
+    <style>
+      body {
+        font-family: 'Lato', sans-serif !important;
+        text-align: center;
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Click the button to display the progress modal:</h4>
+    <button type='button' id='demo' class='btn btn-primary btn-lg'>
+      Launch progress modal
+    </button>
+
+    <script>
+      $('#demo').progressModal({
+        steps: {
+          1: {
+            label: 'Step 1',
+            startFunction: function() {
+              console.log('...step 1 started');
+              setTimeout( function() {
+                $('#demo').progressModal('proceed');
+              }, 500);
+            }
+          },
+          2: {
+            label: 'Step 2',
+            startFunction: function() {
+              console.log('...step 2 started');
+              setTimeout( function() {
+                $('#demo').progressModal('proceed');
+              }, 500);
+            }
+          },
+          3: {
+            label: 'Step 3',
+            startFunction: function() {
+              console.log('...step 3 started');
+              setTimeout( function() {
+                $('#demo').progressModal('hault', "<h1>Haulted!</h1><a class='btn btn-default pq-hault'>Continue</a>");
+                $('.pq-hault.btn').click( function() {
+                  $('#demo').progressModal('proceed');
+                  return false;
+                });
+              }, 500);
+            }
+          },
+          4: {
+            label: 'Step 4',
+            startFunction: function() {
+              console.log('...step 4 started');
+              setTimeout( function() {
+                $('#demo').progressModal('proceed');
+              }, 500);
+            }
+          },
+          5: {
+            label: 'Step 5',
+            startFunction: function() {
+              console.log('...step 5 started');
+              setTimeout( function() {
+                $('#demo').progressModal('fail');
+                // $('#demo').progressModal('proceed');
+              }, 500);
+            }
+          },
+          6: {
+            label: 'Step 6',
+            startFunction: function() {
+              console.log('...step 6 started');
+              setTimeout( function() {
+                $('#demo').progressModal('proceed');
+              }, 500);
+            }
+          }
+        }
+      });
+      // TODO: remove
+      // $('#demo').click();
+    </script>
+  </body>
+</html>
