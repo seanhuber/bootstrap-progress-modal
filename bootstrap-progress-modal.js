@@ -1,6 +1,6 @@
 /*
   jQuery widget for a Bootstrap progress modal (https://github.com/seanhuber/bootstrap-progress-modal)
-  Version 0.0.1
+  Version 0.0.3
 */
 (function($) {
   $.widget( 'sh.progressModal' , {
@@ -29,7 +29,7 @@
     _close: function() {
       var that = this;
       setTimeout( function() {
-        that.element.on('srmodalhidden', function() {
+        that.element.on('bootstrapmodalwidgethidden', function() {
           that._trigger('hidden');
         });
         that.element.bootstrapModalWidget( 'hide' );
