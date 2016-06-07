@@ -1,0 +1,27 @@
+.modal.p-queue table.p-steps {
+  margin-bottom: 0px;
+}
+
+.modal.p-queue table.p-steps > tbody > tr:first-child > td {
+  border-top: 0px;
+}
+
+.modal.p-queue table.p-steps .status.glyphicon.glyphicon-hourglass {
+  color: #1b5f98;
+}
+
+.modal.p-queue table.p-steps .status.glyphicon.glyphicon-option-horizontal {
+  color: gray;
+}
+
+.modal.p-queue table.p-steps .status.glyphicon.glyphicon-ok {
+  color: darkgreen;
+}
+
+.modal.p-queue table.p-steps .status.glyphicon.glyphicon-remove {
+  color: red;
+}
+
+.modal.p-queue table.p-steps .status.glyphicon.glyphicon-warning-sign {
+  color: orange;
+}
