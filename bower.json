@@ -12,7 +12,7 @@
   "authors": [
     "Sean Huber <seanhuber@seanhuber.com>"
   ],
-  "description": "bootstrap-progress-modal is a jQuery widget that displays a Bootstrap 3 modal multi-step progress indicators.  It is similar to a progress bar, but allows the user to see more detailed information about what is happening during progress (like a command-line installation).",
+  "description": "bootstrap-progress-modal is a jQuery widget that displays a Bootstrap 3 modal multi-step progress indicators.",
   "keywords": [
     "jquery",
     "bootstrap",
