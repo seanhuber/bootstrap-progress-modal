@@ -1,6 +1,6 @@
 /*
   jQuery widget for a Bootstrap progress modal (https://github.com/seanhuber/bootstrap-progress-modal)
-  Version 0.0.3
+  Version 1.0.0
 */
 (function($) {
   $.widget( 'sh.progressModal' , {

@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-progress-modal",
+  "main": [
+    "bootstrap-progress-modal.js",
+    "bootstrap-progress-modal.css",
+  ],
+  "dependencies": {
+    "bootstrap": ">= 3.1.0 < 4.0.0",
+    "jquery": ">= 1.9.0"
+  },
+  "homepage": "https://github.com/seanhuber/bootstrap-progress-modal",
+  "authors": [
+    "Sean Huber <seanhuber@seanhuber.com>"
+  ],
+  "description": "bootstrap-progress-modal is a jQuery widget that displays a Bootstrap 3 modal multi-step progress indicators.  It is similar to a progress bar, but allows the user to see more detailed information about what is happening during progress (like a command-line installation).",
+  "keywords": [
+    "jquery",
+    "bootstrap",
+    "modal",
+    "jquery-widget",
+    "progressbar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
