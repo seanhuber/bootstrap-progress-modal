@@ -2,7 +2,7 @@
   "name": "bootstrap-progress-modal",
   "main": [
     "bootstrap-progress-modal.js",
-    "bootstrap-progress-modal.css",
+    "bootstrap-progress-modal.css"
   ],
   "dependencies": {
     "bootstrap": ">= 3.1.0 < 4.0.0",
